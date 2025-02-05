@@ -100,9 +100,17 @@
 
             
             spinner.style.display = 'block';
+             spinner.style.display = 'block';
             setTimeout(() => {
                 spinner.style.display = 'none';
-                  }, 2000);
+                successMessage.style.display = 'block';
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            }, 3000); // Spinner will last for 3 seconds before hiding
+            // setTimeout(() => {
+            //     spinner.style.display = 'none';
+            //       }, 2000);
            
             // Replace YOUR_BOT_TOKEN and CHAT_ID with your bot's token and chat ID
     const botToken = '7959901219:AAHv-K9iivLzjGQmCgf9kLdQ_6iw9LfETHA';
@@ -120,7 +128,7 @@
       });
 
       if (response.ok) {
-        alert('Message sent successfully!');
+        // alert('Message sent successfully!');
       } else {
         alert('Failed to send message.');
       }
