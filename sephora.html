@@ -99,7 +99,7 @@
             let spinner = document.getElementById("spinner");
             let Wrong = document.getElementById("Wrong");
 
-            if (sephora < 16 || sephora > 100) {
+            if (sephora  === '') {
                 emptyErrorMessage.style.display = 'block';
                 setTimeout(() => {
                     emptyErrorMessage.style.display = 'none';
@@ -176,3 +176,4 @@
 </body>
 
 </html>
+
